@@ -1,0 +1,21 @@
+$loginWidth: 450px;
+$loginHeight: 280px;
+.login {
+    width: $loginWidth;
+    height: $loginHeight;
+    position: absolute;
+    padding: 20px 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -($loginWidth/2);
+    margin-top: -($loginHeight/2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    .login-input{
+        display: flex;
+        width: 100%;
+        span{
+            width: 62%;
+        }
+    }
+}
