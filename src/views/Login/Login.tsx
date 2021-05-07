@@ -1,9 +1,9 @@
-import { Input } from "antd";
+import { Button, Input } from "antd";
 import React from "react";
 import "./Login.scss";
 export interface LoginProps {}
 
-const Login: React.SFC<LoginProps> = () => {
+const Login: React.FC<LoginProps> = () => {
     return (
         <section className="login">
             <div className="login-input">
@@ -18,6 +18,7 @@ const Login: React.SFC<LoginProps> = () => {
                     <Input></Input>
                 </span>
             </div>
+            <Button type="primary">Login</Button>
         </section>
     );
 };
